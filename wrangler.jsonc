@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jun-mysql-hyperdrive-template-2",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "d5a2e5588fc5487e8700a5601c0d3f64",
+      "localConnectionString": "mysql://username:password@mysql-domain.com:3306/defaultdb" // Replace with your connection string
+    }
+  ],
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS"
+  },
+  "upload_source_maps": true
+}
